@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  --yellow: #f9d806;
+  --light-yellow: #ffee80;
+  --black: #666;
+  --gray: #2a2a2a;
+
+  --light-color: #cccccc;
+  --boder: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 0.5rem rgba(107, 106, 106, 0.1);
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  /* text-transform: capitalize; */
+  transform: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  height: 100%;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+  background-color: rgb(18, 18, 18) !important;
+  /* background-color: black; */
+  transition: 0.5s;
+}
+
+section {
+  padding: 3rem 5%;
+  color: var(--light-color);
+}
+header {
+  position: fixed;
+  display: flex;
+}
+.heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 2rem 0;
+  font-size: 2.5rem;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.main-btn {
+  display: inline-block;
+  margin-left: 0.5rem;
+  border-radius: 0.2rem;
+  background: var(--light-yellow);
+  color: #000;
+  border: 0.2rem solid #000;
+  font-weight: 500;
+  font-size: 1.7rem;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  transition: 0.5s;
+  box-shadow: var(--box-shadow);
+}
+.main-btn:hover {
+  background: var(--yellow);
+}
+.sale-logo {
+  background-color: red;
+  padding: 0.2rem;
+  font-size: 1.5rem;
+  width: 4rem;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--light-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--light-yellow);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--yellow);
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .header {
+    justify-content: center;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+}
